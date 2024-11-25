@@ -14,7 +14,9 @@
 3. Initialiser votre repository à l’intérieur de ce dossier.
 4. Vérifier que le repository soit correctement créé́
 (présence d’un certain dossier cacher..)
+```
 
+```
 ## Exercice 3 - 1er Commit
 
 1. Dans le répertoire “training-git” créer un fichier index.html.
@@ -26,7 +28,9 @@ vu en cours.
 repository.
 6. Modifier le fichier index.html
 7. Comité à nouveau ce fichier en utilisant VIM
-   
+```
+
+```
 ## Exercice 5 - Merge
 
 1. Créer un dossier training-merge.
@@ -38,7 +42,9 @@ repository.
 7. Rends-toi sur la branche master et assure toi que ce fichier n’est pas présent.
 8. Mergé la branche “feature-first-merge” sur master.
 9. Vérifier que le code le commit fait sur feature-first-merge est bien présent sur master.
-    
+```
+
+```   
 ## Exercice 6 - Conflict
 
 1. Créer un dossier training-conflict
@@ -55,7 +61,9 @@ Ici git vas t’indiquer qu’un conflit est apparu sur le fichier index.html, �
 sélectionnant les développements qui t'intéressent dans le fichier index.html, une fois que c’est fait,
 supprime les lignes contenant ====== et >>>>>> ajoute le fichier index.html à ton stage puis
 commit le.
+```
 
+```
 ## Exercice 7 - Déploiement du repository sur gitlab 
 Le but de cet exercice est de déployer votre le repository "training-git" sur le cloud.
 
@@ -65,7 +73,9 @@ Le but de cet exercice est de déployer votre le repository "training-git" sur 
 4. Rends-toi sur ton terminal
 5. Exécute ligne par ligne le code situé sous “Push an existing Git repository” de l’interface de
 gitlab
+```
 
+```
 ## Exercice 8 - Merge Request ( MR )
 Le but de cet exercice est de comprendre le fonctionnement, l'utilité et la création d’une merge
 request ( dis MR ). Pour ce faire, nous allons utiliser le repository “training-git” déployé à
@@ -95,3 +105,6 @@ En entreprise, tu t’assureras qu’un ou plusieurs de tes collègues ont appro
 cliquant sur l’emoji pouce par exemple avant de réaliser la merge.
 12. Rends-toi sur la branche master, récupère les modifications et assures toi qu'elles soient
 présentes
+```
+
+```
