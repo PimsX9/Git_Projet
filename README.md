@@ -1,4 +1,4 @@
-TD 1 - Git/Github
+#TD 1 - Git/Github
 
 Exercice 1 - Installation
 
