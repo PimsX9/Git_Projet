@@ -4,7 +4,9 @@
 
 1. Installer le logiciel GIT
 2. Vérifier la version de GIT installer sur vos poste de travail (git --version)
-   
+```
+
+```
 ## Exercice 2 - Configuration & création d’un repository
 
 1. Initialiser votre nom & email. (user.name & user.email).
