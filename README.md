@@ -1,11 +1,11 @@
 # TD 1 - Git/Github
 
-Exercice 1 - Installation
+## Exercice 1 - Installation
 
 1. Installer le logiciel GIT
 2. Vérifier la version de GIT installer sur vos poste de travail (git --version)
    
-Exercice 2 - Configuration & création d’un repository
+## Exercice 2 - Configuration & création d’un repository
 
 1. Initialiser votre nom & email. (user.name & user.email).
 2. Créer un répertoire “training-git”.
@@ -13,7 +13,7 @@ Exercice 2 - Configuration & création d’un repository
 4. Vérifier que le repository soit correctement créé́
 (présence d’un certain dossier cacher..)
 
-Exercice 3 - 1er Commit
+## Exercice 3 - 1er Commit
 
 1. Dans le répertoire “training-git” créer un fichier index.html.
 2. Insérer dans ce fichier la déclaration du doctype HTML.
@@ -25,7 +25,7 @@ repository.
 6. Modifier le fichier index.html
 7. Comité à nouveau ce fichier en utilisant VIM
    
-Exercice 5 - Merge
+## Exercice 5 - Merge
 
 1. Créer un dossier training-merge.
 2. Initialiser votre git.
@@ -37,7 +37,7 @@ Exercice 5 - Merge
 8. Mergé la branche “feature-first-merge” sur master.
 9. Vérifier que le code le commit fait sur feature-first-merge est bien présent sur master.
     
-Exercice 6 - Conflict
+## Exercice 6 - Conflict
 
 1. Créer un dossier training-conflict
 2. Initialiser votre git
@@ -54,7 +54,7 @@ sélectionnant les développements qui t'intéressent dans le fichier index.html
 supprime les lignes contenant ====== et >>>>>> ajoute le fichier index.html à ton stage puis
 commit le.
 
-Exercice 7 - Déploiement du repository sur gitlab
+## Exercice 7 - Déploiement du repository sur gitlab 
 Le but de cet exercice est de déployer votre le repository "training-git" sur le cloud.
 
 1. Se rendre sur https://gitlab.com/
@@ -64,7 +64,7 @@ Le but de cet exercice est de déployer votre le repository "training-git" sur 
 5. Exécute ligne par ligne le code situé sous “Push an existing Git repository” de l’interface de
 gitlab
 
-Exercice 8 - Merge Request ( MR )
+##Exercice 8 - Merge Request ( MR )
 Le but de cet exercice est de comprendre le fonctionnement, l'utilité et la création d’une merge
 request ( dis MR ). Pour ce faire, nous allons utiliser le repository “training-git” déployé à
 l’instant sur gitlab.
