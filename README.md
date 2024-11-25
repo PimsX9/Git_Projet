@@ -64,7 +64,7 @@ Le but de cet exercice est de déployer votre le repository "training-git" sur 
 5. Exécute ligne par ligne le code situé sous “Push an existing Git repository” de l’interface de
 gitlab
 
-##Exercice 8 - Merge Request ( MR )
+## Exercice 8 - Merge Request ( MR )
 Le but de cet exercice est de comprendre le fonctionnement, l'utilité et la création d’une merge
 request ( dis MR ). Pour ce faire, nous allons utiliser le repository “training-git” déployé à
 l’instant sur gitlab.
