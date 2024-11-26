@@ -400,11 +400,9 @@ Date:   Tue Nov 26 15:47:18 2024 +0100
 Le but de cet exercice est de déployer votre le repository "training-git" sur le cloud.
 
 1. Se rendre sur https://gitlab.com/
-```
-
-```
 2. Créer un compte gitlab.
 ```
+https://github.com/PimsX9
 
 ```
 3. Créer un projet training-git ( blank project, project public )
