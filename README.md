@@ -137,38 +137,129 @@ Date:   Tue Nov 26 14:14:34 2024 +0100
 
 1. Créer un dossier training-merge.
 ```
+$ mkdir training-merge
+$ cd training-merge/
 
 ```
 2. Initialiser votre git.
 ```
+$ git init
+Initialized empty Git repository in C:/Git_projets/training-merge/.git/
+
+$ ls -lisa
+total 4
+39406496739678134 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:13 ./
+37154696925860776 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:12 ../
+28147497671279070 4 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:13 .git/
 
 ```
 3. Créer un fichier index.html est commit le.
 ```
+$ touch index.html
+$ git add index.html
+$ git commit -m "[Feat] Ajout fichier index.html"
+[master (root-commit) b6c3b91] [Feat] Ajout fichier index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+$ git log
+commit b6c3b91ad78c30c432efc6c4b715ffb05e65c970 (HEAD -> master)
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 15:15:59 2024 +0100
+
+    [Feat] Ajout fichier index.html
 
 ```
 4. Créer une branche “ feature-first-merge ” et déporte-toi dessus.
 ```
+$ git branch feature-first-merge
+$ git branch
+  feature-first-merge
+* master
+
+$ git switch feature-first-merge
+Switched to branch 'feature-first-merge'
+$ git branch
+* feature-first-merge
+  master
 
 ```
 5. Créer un fichier main.js
 ```
+$ touch main.js
 
 ```
 6. Commiter ce fichier
 ```
+$ git add main.js
+$ git commit -m "[Feat] Ajout fichier main.js"
+[feature-first-merge 5cd7380] [Feat] Ajout fichier main.js
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main.js
+
+$ git log
+commit 5cd73809dfb89a72170c1596e60f97eecca8c6d0 (HEAD -> feature-first-merge)
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 15:21:06 2024 +0100
+
+    [Feat] Ajout fichier main.js
+
+commit b6c3b91ad78c30c432efc6c4b715ffb05e65c970 (master)
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 15:15:59 2024 +0100
+
+    [Feat] Ajout fichier index.html
 
 ```
 7. Rends-toi sur la branche master et assure toi que ce fichier n’est pas présent.
 ```
+$ git switch master
+Switched to branch 'master'
+
+$ ls -lisa
+total 4
+39406496739678134 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:21 ./
+37154696925860776 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:12 ../
+28147497671279070 4 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:21 .git/
+65302194597074566 0 -rw-r--r-- 1 MLNF6641 1049089 0 Nov 26 15:14 index.html
 
 ```
 8. Mergé la branche “feature-first-merge” sur master.
 ```
+$ git merge feature-first-merge
+Updating b6c3b91..5cd7380
+Fast-forward
+ main.js | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main.js
+
+$ git log
+commit 5cd73809dfb89a72170c1596e60f97eecca8c6d0 (HEAD -> master, feature-first-merge)
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 15:21:06 2024 +0100
+
+    [Feat] Ajout fichier main.js
+
+commit b6c3b91ad78c30c432efc6c4b715ffb05e65c970
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 15:15:59 2024 +0100
+
+    [Feat] Ajout fichier index.html
 
 ```
 9. Vérifier que le code le commit fait sur feature-first-merge est bien présent sur master.
 ```
+$ git branch
+  feature-first-merge
+* master
+
+$ ls -lisa
+total 4
+39406496739678134 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:39 ./
+37154696925860776 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:12 ../
+28147497671279070 4 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:39 .git/
+65302194597074566 0 -rw-r--r-- 1 MLNF6641 1049089 0 Nov 26 15:14 index.html
+23080948090498307 0 -rw-r--r-- 1 MLNF6641 1049089 0 Nov 26 15:39 main.js
 
 ```   
 ## Exercice 6 - Conflict
