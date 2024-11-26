@@ -266,38 +266,80 @@ total 4
 
 1. Créer un dossier training-conflict
 ```
+$ mkdir training-conflict
+$ cd training-conflict/
 
 ```
 2. Initialiser votre git
 ```
+$ git init
+Initialized empty Git repository in C:/Git_projets/training-conflict/.git/
+$ ls -lisa
+total 8
+75998243712053406 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:45 ./
+37154696925860776 4 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:44 ../
+54043195528523788 4 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 15:45 .git/
 
 ```
 3. Créer un fichier index.html & commit le
 ```
+$ touch index.html
+$ git add index.html
+$ git commit -m "[Feat] Ajout fichier index.html"
+[master (root-commit) b7530f9] [Feat] Ajout fichier index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
 
 ```
 4. Créer une branche “feature-first-conflict” et déporte-toi dessus.
 ```
+$ git branch feature-first-conflict
+$ git switch feature-first-conflict
+Switched to branch 'feature-first-conflict'
+$ git branch
+* feature-first-conflict
+  master
 
 ```
 5. Modifie le fichier index.html pour lui ajouter un titre <title> à la ligne 1
 ```
+$ vim index.html
+Ajout de la balise <title> sur la première ligne
+$ cat index.html
+<title>
 
 ```
 6. Commit cette modification
 ```
+$ git add index.html
+$ git commit -m "[Feat]Ajout balise <title>"
+[feature-first-conflict 8aa7c56] [Feat]Ajout balise <title>
+ 1 file changed, 1 insertion(+)
 
 ```
 7. Rends-toi sur la branche master
 ```
+$ git switch master
+Switched to branch 'master'
+$ git branch
+  feature-first-conflict
+* master
 
 ```
 8. Modifie le fichier index.html pour lui ajouter un <body> à la ligne 1
 ```
+$ vim index.html
+Ajout de la balise <body> sur la première ligne
+$ cat index.html
+<body>
 
 ```
 9. Commit cette modification
 ```
+$ git add index.html
+$ git commit -m "[Feat] Ajout balise <body>"
+[master b368b80] [Feat] Ajout balise <body>
+ 1 file changed, 1 insertion(+)
 
 ```
 10. Merge la branche feature-first-conflict sur master.
@@ -306,6 +348,52 @@ sélectionnant les développements qui t'intéressent dans le fichier index.html
 supprime les lignes contenant ====== et >>>>>> ajoute le fichier index.html à ton stage puis
 commit le.
 ```
+$ git merge feature-first-conflict
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ cat index.html
+<<<<<<< HEAD
+<body>
+=======
+<title>
+>>>>>>> feature-first-conflict
+
+Après modification :
+$ cat index.html
+<body>
+<title>
+
+$ git add index.html
+$ git commit -m "[Feat]Gestion conflict"
+[master b30b934] [Feat]Gestion conflict
+
+$ git log
+commit b30b934cd9d45596a3f2e2f04d0557b98d3ee25f (HEAD -> master)
+Merge: b368b80 8aa7c56
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 16:10:39 2024 +0100
+
+    [Feat]Gestion conflict
+
+commit b368b808e54d158cc5431017dddadd77372a2ed1
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 16:05:20 2024 +0100
+
+    [Feat] Ajout balise <body>
+
+commit 8aa7c56301d276e1f8170f42a8fa34b9f6324741 (feature-first-conflict)
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 15:54:02 2024 +0100
+
+    [Feat]Ajout balise <title>
+
+commit b7530f935279b9a06a533f5aa12e7bc8246d55ba
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 15:47:18 2024 +0100
+
+    [Feat] Ajout fichier index.html
 
 ```
 ## Exercice 7 - Déploiement du repository sur gitlab 
