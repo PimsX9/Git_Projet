@@ -5,6 +5,9 @@
 1. Installer le logiciel GIT
 2. Vérifier la version de GIT installer sur vos poste de travail (git --version)
 ```
+MLNF6641@WX-OR6256636 MINGW64 /c/Git_projets/TD_1
+$ git --version
+git version 2.47.0.windows.2
 
 ```
 ## Exercice 2 - Configuration & création d’un repository
