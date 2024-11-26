@@ -407,12 +407,10 @@ https://github.com/PimsX9
 ```
 3. Créer un projet training-git ( blank project, project public )
 ```
+https://github.com/PimsX9/Training-git
 
 ```
 4. Rends-toi sur ton terminal
-```
-
-```
 5. Exécute ligne par ligne le code situé sous “Push an existing Git repository” de l’interface de
 gitlab
 ```
