@@ -94,10 +94,43 @@ Date:   Tue Nov 26 14:14:34 2024 +0100
 ```
 8. Modifier le fichier index.html
 ```
+$ vim index.html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>training GIT</title>
+</head>
+<body>
+    <!-- Insérer le contenu ici -->
+</body>
+</html>
 
 ```
 9. Comité à nouveau ce fichier en utilisant VIM
 ```
+$ git add index.html
+$ git commit
+
+Ajout du commentaire via VIM -> [Feat] modification fichier index.html
+Fermeture du fichier.
+
+[master 829474b] [Feat] modification fichier index.html
+ 1 file changed, 1 insertion(+), 9 deletions(-)
+
+$ git log
+commit 829474b264dc88a136fab22f49160678551e4e43 (HEAD -> master)
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 15:02:10 2024 +0100
+
+    [Feat] modification fichier index.html
+
+commit a06f98a24189d0ff9aa4578c9676fc0d868945c8
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 14:14:34 2024 +0100
+
+    [Feat] Ajout du nouveau fichier index.html
 
 ```
 ## Exercice 5 - Merge
