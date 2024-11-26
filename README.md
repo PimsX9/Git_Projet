@@ -13,24 +13,90 @@ git version 2.47.0.windows.2
 ## Exercice 2 - Configuration & création d’un repository
 
 1. Initialiser votre nom & email. (user.name & user.email).
+```
+
+MLNF6641@WX-OR6256636 MINGW64 /c/Git_projets/training-git
+$ git config --global user.name "Rémy"
+$ git config --global user.email "remy.burdet@orange.com"
+
+```
 2. Créer un répertoire “training-git”.
+```
+MLNF6641@WX-OR6256636 MINGW64 /c/Git_projets/training-git
+
+```
 3. Initialiser votre repository à l’intérieur de ce dossier.
+```
+$ git init
+Initialized empty Git repository in C:/Git_projets/training-git/.git/
+
+```
 4. Vérifier que le repository soit correctement créé́
 (présence d’un certain dossier cacher..)
 ```
+$ ls -lisa
+total 4
+12384898975427814 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 14:00 ./
+37154696925860776 0 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 13:53 ../
+35465847065697815 4 drwxr-xr-x 1 MLNF6641 1049089 0 Nov 26 14:00 .git/
 
 ```
 ## Exercice 3 - 1er Commit
 
 1. Dans le répertoire “training-git” créer un fichier index.html.
+```
+
+$ touch index.html
+
+```
 2. Insérer dans ce fichier la déclaration du doctype HTML.
+```
+$ vim index.html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title><!-- Insérer le titre ici--></title>
+</head>
+<body>
+    <!-- Insérer le contenu ici -->
+</body>
+</html>
+
+```
 3. Ajoutez le fichier index.html dans le stage.
+```
+$ git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the ne
+xt time Git touches it
+
+```
 4. Créer un commit avec ce fichier, en respectant la norme de nommage du commit comme
 vu en cours.
-5. Vérifier que le commit ai bien été ajouté dans l’historique des commit de votre
+```
+$ git commit -m "[Feat] Ajout du nouveau fichier index.html"
+[master (root-commit) a06f98a] [Feat] Ajout du nouveau fichier index.html
+ 1 file changed, 18 insertions(+)
+ create mode 100644 index.html
+
+```
+6. Vérifier que le commit ai bien été ajouté dans l’historique des commit de votre
 repository.
-6. Modifier le fichier index.html
-7. Comité à nouveau ce fichier en utilisant VIM
+```
+$ git log
+commit a06f98a24189d0ff9aa4578c9676fc0d868945c8 (HEAD -> master)
+Author: Rémy <remy.burdet@orange.com>
+Date:   Tue Nov 26 14:14:34 2024 +0100
+
+    [Feat] Ajout du nouveau fichier index.html
+
+```
+8. Modifier le fichier index.html
+```
+
+```
+9. Comité à nouveau ce fichier en utilisant VIM
 ```
 
 ```
