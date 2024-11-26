@@ -414,7 +414,10 @@ https://github.com/PimsX9/Training-git
 5. Exécute ligne par ligne le code situé sous “Push an existing Git repository” de l’interface de
 gitlab
 ```
-
+$ cd training-git/
+$ git remote add origin https://github.com/PimsX9/training-git.git
+$ git branch -M main
+$ git push -u origin main
 ```
 ## Exercice 8 - Merge Request ( MR )
 Le but de cet exercice est de comprendre le fonctionnement, l'utilité et la création d’une merge
