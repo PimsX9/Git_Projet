@@ -436,10 +436,20 @@ l’instant sur gitlab.
 
 1. Rendez-vous sur la branche master du projet training-git.
 ```
+MLNF6641@WX-OR6256636 MINGW64 /c/Git_projets/training-git (main)
+$ git switch main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
 
 ```
 2. Créer une branche first-merge-request.
 ```
+$ git branch first-merge-request
+$ git switch first-merge-request
+Switched to branch 'first-merge-request'
+$ git branch
+* first-merge-request
+  main
 
 ```
 3. Pousse cette branche sur ton repository distant ( git push )
@@ -448,24 +458,61 @@ logique, et te proposera une commande à exécuter pour créer une nouvelle bran
 repository distant au format ( git push --set-upstream origin <ma-branch> ), exécute le code
 proposer par git.
 ```
+$ git push
+fatal: The current branch first-merge-request has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin first-merge-request
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+$ git push --set-upstream origin first-merge-request
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'first-merge-request' on GitHub by visiting:
+remote:      https://github.com/PimsX9/training-git/pull/new/first-merge-reques
+remote:
+To https://github.com/PimsX9/training-git.git
+ * [new branch]      first-merge-request -> first-merge-request
+branch 'first-merge-request' set up to track 'origin/first-merge-request'.
 
 ```
 5. Créer un fichier main.js
 ```
+$ touch main.js
 
 ```
 6. Ajouter le code console.log (“premiere MR”) à l’intérieur de celui-ci
 ```
+$ vim main.js
+$ cat main.js
+console.log (“premiere MR”)
 
 ```
 7. Commit le et pousse le sur ton repository distant (git push)
 ```
+$ git add main.js
+$ git commit -m "[Feat] Ajout fichier main.js"
+[first-merge-request 3a7887d] [Feat] Ajout fichier main.js
+ 1 file changed, 1 insertion(+)
+ create mode 100644 main.js
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/PimsX9/training-git.git
+   829474b..3a7887d  first-merge-request -> first-merge-request
 
 ```
 8. Rends-toi sur gitlab (connectes-toi si besoin)
 ```
 
 ```
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
 9. Rends-toi sur ton projet training-git.
 ```
 
