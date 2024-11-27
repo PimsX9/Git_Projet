@@ -478,19 +478,19 @@ To https://github.com/PimsX9/training-git.git
 branch 'first-merge-request' set up to track 'origin/first-merge-request'.
 
 ```
-5. Créer un fichier main.js
+4. Créer un fichier main.js
 ```
 $ touch main.js
 
 ```
-6. Ajouter le code console.log (“premiere MR”) à l’intérieur de celui-ci
+5. Ajouter le code console.log (“premiere MR”) à l’intérieur de celui-ci
 ```
 $ vim main.js
 $ cat main.js
 console.log (“premiere MR”)
 
 ```
-7. Commit le et pousse le sur ton repository distant (git push)
+6. Commit le et pousse le sur ton repository distant (git push)
 ```
 $ git add main.js
 $ git commit -m "[Feat] Ajout fichier main.js"
@@ -508,35 +508,38 @@ To https://github.com/PimsX9/training-git.git
    829474b..3a7887d  first-merge-request -> first-merge-request
 
 ```
-8. Rends-toi sur gitlab (connectes-toi si besoin)
+7. Rends-toi sur gitlab (connectes-toi si besoin)
 
 ![Screenshot of my GitHub.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q7.png)
 
-9. Rends-toi sur ton projet training-git.
-```
+8. Rends-toi sur ton projet training-git.
 
-```
-10. Rends-toi sur la page branche est assure toi que ta nouvelle branche “first-mergerequest”
+![Screenshot of my GitHub projet training-git.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q8.png)
+
+9. Rends-toi sur la page branche est assure toi que ta nouvelle branche “first-mergerequest”
 est bien présente.
-```
 
-```
-12. Créer une nouvelle MR en sélectionnant le branche first-merge-request en “source
+![Screenshot of my branch “first-mergerequest”.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q9.png)
+
+10. Créer une nouvelle MR en sélectionnant le branche first-merge-request en “source
 branch” et master en “target branche”
 Le but ici est bien de créer une merge request qui après validation, permettra le merge des
 modifications apporté par la branche “first-merge-request” vers la branche “master”
-```
 
-```
-14. Une fois que tu t’es assuré que tes développements sont conformes aux attentes (onglet
+![Screenshot of my branch “first-mergerequest”.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q10_1.png)
+![Screenshot of my branch “first-mergerequest”.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q10_2.png)
+![Screenshot of my branch “first-mergerequest”.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q10_3.png)
+
+11. Une fois que tu t’es assuré que tes développements sont conformes aux attentes (onglet
 change de la page merge request), tu peux cliquer sur merge.
 En entreprise, tu t’assureras qu’un ou plusieurs de tes collègues ont approuvé tes changements en
 cliquant sur l’emoji pouce par exemple avant de réaliser la merge.
-```
 
-```
-16. Rends-toi sur la branche master, récupère les modifications et assures toi qu'elles soient
+![Screenshot of my branch “first-mergerequest”.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q11_1.png)
+![Screenshot of my branch “first-mergerequest”.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q11_2.png)
+
+12. Rends-toi sur la branche master, récupère les modifications et assures toi qu'elles soient
 présentes
-```
 
-```
+![Screenshot of my branch “first-mergerequest”.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q12_1.png)
+![Screenshot of my branch “first-mergerequest”.](https://github.com/PimsX9/Training-git_TD/blob/main/Exercice_8_Q12_2.png)
