@@ -418,6 +418,16 @@ $ cd training-git/
 $ git remote add origin https://github.com/PimsX9/training-git.git
 $ git branch -M main
 $ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 748 bytes | 748.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/PimsX9/training-git.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
 ```
 ## Exercice 8 - Merge Request ( MR )
 Le but de cet exercice est de comprendre le fonctionnement, l'utilité et la création d’une merge
