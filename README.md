@@ -135,7 +135,7 @@ Date:   Tue Nov 26 14:14:34 2024 +0100
 ```
 ## Exercice 5 - Merge
 
-1. Créer un dossier training-merge.
+1. Créer un dossier “training-merge”.
 ```
 $ mkdir training-merge
 $ cd training-merge/
@@ -170,7 +170,7 @@ Date:   Tue Nov 26 15:15:59 2024 +0100
     [Feat] Ajout fichier index.html
 
 ```
-4. Créer une branche “ feature-first-merge ” et déporte-toi dessus.
+4. Créer une branche “feature-first-merge” et déporte-toi dessus.
 ```
 $ git branch feature-first-merge
 $ git branch
@@ -247,7 +247,7 @@ Date:   Tue Nov 26 15:15:59 2024 +0100
     [Feat] Ajout fichier index.html
 
 ```
-9. Vérifier que le code le commit fait sur feature-first-merge est bien présent sur master.
+9. Vérifier que le code commit fait sur feature-first-merge est bien présent sur master.
 ```
 $ git branch
   feature-first-merge
@@ -264,7 +264,7 @@ total 4
 ```   
 ## Exercice 6 - Conflict
 
-1. Créer un dossier training-conflict
+1. Créer un dossier “training-conflict”
 ```
 $ mkdir training-conflict
 $ cd training-conflict/
@@ -407,7 +407,7 @@ https://github.com/PimsX9
 ```
 3. Créer un projet training-git ( blank project, project public )
 ```
-https://github.com/PimsX9/Training-git
+https://github.com/PimsX9/training-git
 
 ```
 4. Rends-toi sur ton terminal
