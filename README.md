@@ -509,10 +509,9 @@ To https://github.com/PimsX9/training-git.git
 
 ```
 8. Rends-toi sur gitlab (connectes-toi si besoin)
-```
 
-```
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of my GitHub.](/assets/images/Exercice_8_Q7.png)
+
 9. Rends-toi sur ton projet training-git.
 ```
 
