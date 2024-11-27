@@ -510,7 +510,7 @@ To https://github.com/PimsX9/training-git.git
 ```
 8. Rends-toi sur gitlab (connectes-toi si besoin)
 
-![Screenshot of my GitHub.](/assets/images/Exercice_8_Q7.png)
+![Screenshot of my GitHub.](/blob/main/Exercice_8_Q7.png)
 
 9. Rends-toi sur ton projet training-git.
 ```
